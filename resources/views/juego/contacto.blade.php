@@ -4,6 +4,16 @@
     
 
     <div class="container">
+
+
+    @if (session('mensaje'))
+    <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
+          {{session('mensaje')}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
       
       <section>
         <article class="row">
@@ -70,15 +80,9 @@
             <h2 class="m-auto"><ion-icon class="mt-4 mr-3 _Niicono-dejatucoment" name="thumbs-up"></ion-icon>Deja tu comentario por acá<ion-icon class=" ml-3 _Niicono-dejatucoment" name="arrow-round-down"></ion-icon></h2>
           </article>
                           
-          <form class="mx-auto text-center mt-4" method="post">
-
-            <?php
-            if(isset($erroresComents)){
-                foreach($erroresComents as $value){
-                    echo "<br>";
-                    echo $value;
-                }
-            }?>
+          <form class="mx-auto text-center mt-4" method="post" action="{{ route('contacto') }}">
+            
+            @csrf
 
             <div class="col-5 form-group text-center">
               <label class="_Nitext-comentario" for="nombreC">Nombre</label>

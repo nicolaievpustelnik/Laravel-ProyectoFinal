@@ -21,13 +21,36 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/homeJuego', 'HomeJuegoController@homeJuego')->name('homeJuego');
 
 
-
+//////////////////// NAV
 // RUTA DE RANKING
-Route::get('/ranking', 'RankingController@rank')->name('ranking');
+Route::get('/ranking', 'PagNavController@rank')->name('ranking');
 // RUTA DE FAQ
-Route::get('/faq', 'FaqController@faq')->name('faq');
+Route::get('/faq', 'PagNavController@faq')->name('faq');
 // RUTA DE CONTACTO
-Route::get('/contacto', 'ContactoController@contac')->name('contacto');
+Route::get('/contacto', 'PagNavController@contac')->name('contacto');
+Route::post('/contacto', 'PagNavController@guardarComent')->name('contacto');
+
+
+// ////////////////////// JUEGO
+// // RUTA DE HOMEJUEGO
+// Route::get('/home', 'HomeController@home')->name('home');
+// // RUTA DE JUEGO
+// Route::get('/juego', 'JuegoController@juego')->name('juego');
+// // RUTA DE EDITAR PERFIL
+Route::get('/editarPerf', 'JuegoController@editperf')->name('editarPerf');
+
+
+// ////////////////////// ADMINISTRADOR
+// // RUTA DE PREGUNTAS
+// Route::post('/preguntas', 'PreguntasController@preguntas')->name('preguntas');
+// // RUTA DE COMENTARIOS
+// Route::post('/comentarios/{comentarios}', 'ComentariosController@coment')->name('comentarios');
+// // RUTA DE AGG ADMIN
+// Route::post('/aggAdmin', 'AggAdminController@aggAdmin')->name('aggAdmin');
+// // RUTA DE AGG PREGUNTA
+// Route::post('/aggPreg', 'AggPregController@aggPreg')->name('aggPreg');
+// // RUTA DE HOME ADMIN
+// Route::get('/homeAdmin', 'HomeAdminController@homeAdmin')->name('homeAdmin');

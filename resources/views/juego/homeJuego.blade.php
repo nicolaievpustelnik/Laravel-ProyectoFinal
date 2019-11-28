@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.plantillaGeneral')
 
 @section('content')
 <div class="container _Nicont-ho">
@@ -12,7 +12,7 @@
       </article>
 
       <article class="col-lg-6 p-3 _Nitit-bien-ho">
-          <h2><ion-icon class="mr-2" name="thumbs-up"></ion-icon>BIENVENIDO: <strong>{{ Auth::user()->name }}</strong> <ion-icon class="ml-2" name="happy"></ion-icon></h2>
+          <h2><ion-icon class="mr-2" name="thumbs-up"></ion-icon>BIENVENIDO: <strong>nombre</strong> <ion-icon class="ml-2" name="happy"></ion-icon></h2>
       </article>
 
       <article class="_Niart-ho">

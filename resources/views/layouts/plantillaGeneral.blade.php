@@ -116,7 +116,7 @@
             <section class="col-4 mt-3"> 
             <ion-icon class="mt-2 _Niicons-foot" name="call"></ion-icon>
             <article><strong>Contáctenos:</strong></article>
-            <article><a href="contacto.php">Nuestras redes sociales</a></article>
+            <article><a href="{{'contacto'}}">Nuestras redes sociales</a></article>
             <article><ion-icon class="mt-4 _Niicons-footRede" name="logo-facebook"></ion-icon><ion-icon class="mt-4 mr-2 ml-2 mt-4 _Niicons-footRede" name="logo-twitter"></ion-icon><ion-icon class="_Niicons-footRede" name="logo-instagram"></ion-icon></article>
             </section>
 

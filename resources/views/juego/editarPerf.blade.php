@@ -2,6 +2,19 @@
 
 @section('content')
 <div class="container">
+    <nav class="_NiPnavnav-ju">
+        <section class="_Ninav-ju">
+            
+            <article>
+            <a class=""><img class="_Nifot-nav" width="50" heigth="50" src="" alt=""></a>
+            </article>
+        
+            <article class="_Niart-salir-jue">
+                <a href="{{'home'}}" class="btn _Nibot-sal-ju btn-lg active" role="button" aria-pressed="true">Salir</a>
+            </article>
+
+        </section>
+    </nav>
 
         <form class="" action="editarPerfil.php" method="post" enctype="multipart/form-data">
 

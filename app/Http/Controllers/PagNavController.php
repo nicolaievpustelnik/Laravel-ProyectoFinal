@@ -19,7 +19,7 @@ class PagNavController extends Controller
             'comentarios' => request('comentarios'),
         ]);
 
-        return back()->with('mensaje',' Se ha enviado tu comentario satisfactoriamente...!');
+        return back()->with('mensajea',' Se ha enviado tu comentario satisfactoriamente...!');
     }
 
     // FAQ
@@ -31,4 +31,5 @@ class PagNavController extends Controller
     public function rank(){
         return view('juego/ranking');
     }
+    
 }

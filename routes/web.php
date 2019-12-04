@@ -41,11 +41,12 @@ Route::get('/editarPerf', 'JuegoController@editperf')->name('editarPerf');
 // RUTA DE PREGUNTAS
 Route::get('/preguntas', 'AdminController@show')->name('preguntas');
 Route::get('/preguntas/{id}', 'AdminController@delete')->name('preguntas');
-// RUTA DE COMENTARIOS
-// Route::post('/comentarios/{comentarios}', 'ComentariosController@coment')->name('comentarios');
 // RUTA DE AGG ADMIN
-// Route::post('/aggAdmin', 'AggAdminController@aggAdmin')->name('aggAdmin');
+Route::get('/aggAdmin', 'AdminController@aggAdmin')->name('aggAdmin');
 // RUTA DE AGG PREGUNTA
-// Route::post('/aggPreg', 'AggPregController@aggPreg')->name('aggPreg');
+Route::get('/aggPreg', 'AdminController@aggPreg')->name('aggPreg');
+// RUTA DE COMENTARIOS
+Route::get('/comentarios', 'AdminController@coment')->name('comentarios');
+Route::get('/comentarios/{id}', 'AdminController@deletComent')->name('comentarios');
 // RUTA DE HOME ADMIN
 Route::get('/homeAdmin', 'AdminController@homeAdmin')->name('homeAdmin')->middleware('admin');

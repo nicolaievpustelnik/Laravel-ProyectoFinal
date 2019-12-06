@@ -35,6 +35,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/juego', 'JuegoController@juego')->name('juego');
 // // RUTA DE EDITAR PERFIL
 Route::get('/editarPerf', 'JuegoController@editperf')->name('editarPerf');
+// // RUTA DE PREGUNTAS
+Route::get('/juego', 'JuegoController@llamaPregunta')->name('juego');
 
 
 ////////////////////// ADMINISTRADOR

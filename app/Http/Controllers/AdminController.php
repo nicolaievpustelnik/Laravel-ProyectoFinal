@@ -36,12 +36,11 @@ class AdminController extends Controller
         $comentarios = Comentario::all();
         return view('juego/comentarios')->with('comentarios',$comentarios);
     }
-
     // DELETE comentarios
     public function deletComent($id){
         $comentarios =  Comentario::find($id);
         $comentarios->delete();
-        return view('juego/comentarios');  
+        return back()->with('msj',' Se ha eliminado un comentario...!');  
     }
     
 }

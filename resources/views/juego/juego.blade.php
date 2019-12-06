@@ -1,5 +1,11 @@
 @extends('layouts.app')
 @section('content')
+<?php
+$cuenta = count($preguntas);
+$arr=[];
+
+
+?>
 <body class="_NibodySolo-juego">
 
 <div class="container">
@@ -20,13 +26,13 @@
 
     <!--Pregunta-->
     <section class="_Nicaja-pregunta-principal">
-        <h2 class="_Nititulo-pregunta">¿Cómo se llama el juego?</h2>
+        <h2 class="_Nititulo-pregunta"></h2>
     </section>
     
     <!--CAJITA DE RELOJ-->
-    <section class="_Nicajita-info-ju">
-        <h3 class="_Nireloj-pregunta-h3">1/30 </h3>
-        <h3 class="_Nireloj-pregunta-h3">00:00:00</h3>
+    <section  class="_Nicajita-info-ju">
+        <h3 class="_contador _Nireloj-pregunta-h3">1/30 </h3>
+        <h3 class="_Nireloj-pregunta-h3"> <span id="minutos">0</span> : <span id="segundos">0</span> </h3>
         <h4><ion-icon class="_Niicono-vidas" name="heart"></ion-icon><ion-icon class="_Niicono-vidas" name="heart"></ion-icon><ion-icon class="_Niicono-vidas" name="heart-dislike"></ion-icon></h4>
     </section>
 
@@ -35,30 +41,27 @@
 
         <section class="_Nisepara-pregunta">
             
-            <article class="_Nirespuesta-par">
-                <p class="_Niletra-pregunta">1.-</p> <h3 class="_Niletra-pregunta">Preguntados²</h3>
-            </article>
-            <article class="_Nirespuesta-par">
-                <p class="_Niletra-pregunta">2.-</p> <h3 class="_Niletra-pregunta">Preguntados</h3>
-            </article>
+            <button  class="_botonjs _Nirespuesta-par">
+            <p class="_Niletra-pregunta">1.-</p> <h3 class="_Niletra-pregunta"></h3>
+            </button>
+            <button class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta">2.-</p> <h3 class="_Niletra-pregunta"></h3>
+            </button>
 
         </section>
 
         <section class="_Nisepara-pregunta">
 
-            <article class="_Nirespuesta-par">
-                <p class="_Niletra-pregunta">3.-</p> <h3 class="_Niletra-pregunta">Pregunta Pregunta</h3>
-            </article>
-            <article class="_Nirespuesta-par">
-                <p class="_Niletra-pregunta">4.-</p> <h3 class="_Niletra-pregunta">Pregunta²</h3>
-            </article>
-
+            <button class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta">3.-</p> <h3 class="_Niletra-pregunta"></h3>
+            </button>
+            <button class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta">4.-</p> <h3 class="_Niletra-pregunta"></h3>
+            </button>
+            <input id="cuenta" type="hidden" value="{{$cuenta}}">
         </section>
 
     </main>
-
-
-
 </div>
 
 </body>

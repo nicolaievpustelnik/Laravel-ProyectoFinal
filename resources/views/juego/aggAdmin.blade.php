@@ -16,12 +16,12 @@
         <img class="_NilogoAgg-admin" src="img/nuevoAdmin.png" width="100" heigth="100" alt="">
     </div>
 
-    <form class="col-4 text-center _NicuaAgg-adm" action="agregarAdmin.php" method="post">
-
+    <form class="col-4 text-center _NicuaAgg-adm" action="aggAdmin" method="post">
+    @csrf
         <div class="form-group text-white">
 
             <label for=""><i class="fas fa-user" ></i> Usuario</label>
-            <input type="text" class="form-control _Nainp-input" id="userName" aria-describedby="emailHelp" placeholder="Nombre de Usuario" name="userName" value="">
+            <input type="text" class="form-control _Nainp-input" id="name" aria-describedby="name" placeholder="Nombre de Usuario" name="name" value="">
          
 
         </div>
@@ -34,13 +34,13 @@
         </div>
 
         <div class="form-group text-white">
-            <label for=""><i class="fas fa-key"></i> password</label>
+            <label for=""><i class="fas fa-key"></i> Contraseña</label>
             <input type="password" class="form-control _Nainp-input" id="password" placeholder=" password" name="password">
            
         </div>
 
         <div class="form-group text-white">
-            <label for=""><i class="fas fa-key"></i> Confirmar password</label>
+            <label for=""><i class="fas fa-key"></i> Confirmar contraseña</label>
             <input type="password" class="form-control _Nainp-input" id="confirmPassword"  placeholder=" Confirmar password" name="confirmPassword">
          
         </div>
@@ -50,7 +50,7 @@
         </div>
 
         <div  class="botonesLogin">
-            <button type="submit" class="col-2 btn btn-primary btn-sm _Nacolor-entrar">Entrar</button>
+            <button type="submit" class="col-2 btn btn-primary btn-sm _Nacolor-entrar">Enviar</button>
         </div>
             
     </form>

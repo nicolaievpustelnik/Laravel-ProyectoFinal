@@ -17,9 +17,9 @@
 
     <section>
 
-        <article class="_Nicajita-redessociales col-lg-12 mt-3 pt-4 pb-4">
+        <article id="cuadro1" class="_Nicajita-redessociales col-lg-12 mt-3 pt-4 pb-4">
         <h3 class="text-center _Bsubtitulo" id="que">¿Qué es <strong>Pregunta²</strong>?</h3>
-        <p class="_Nitext-info1">Pregunta² es una página web creada como proyecto final para el curso Web Full Stack en Digital House. Es un juego de preguntas y respuestas, con algunos agregados para darle un poco de animación. En definitiva, es una manera de poner en práctica los contenidos aprendidos en clase, y al mismo tiempo hacer algo divertido de producir y de utilizar para todos.</p>
+        <p id="preg1" class="_Nitext-info1">Pregunta² es una página web creada como proyecto final para el curso Web Full Stack en Digital House. Es un juego de preguntas y respuestas, con algunos agregados para darle un poco de animación. En definitiva, es una manera de poner en práctica los contenidos aprendidos en clase, y al mismo tiempo hacer algo divertido de producir y de utilizar para todos.</p>
         <article class="_Bsubtitulo">
             <ion-icon class="mr-4" name="thumbs-down"></ion-icon><ion-icon name="thumbs-up"></ion-icon>
         </article>

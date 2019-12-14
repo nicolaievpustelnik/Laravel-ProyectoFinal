@@ -16,14 +16,14 @@
         </section>
     </nav>
 
-        <form class="" action="editarPerfil.php" method="post" enctype="multipart/form-data">
+        <form class="" action="editarPerfil" method="post" enctype="multipart/form-data">
 
             <section class="_NisecP-edit text-center">
                 <h1 class="_Nih1edit-perf">Editar perfil</h1>
                 
 
                 <article class="_NiTtex-edit text-center">
-                    <img class="_NiimgPerf-edit" src="" alt="" width="250" height="250">
+                    <img id="editPerf" class="_NiimgPerf-edit" src="{{Storage::url('avatars/'. Auth::user()->avatar)}}" alt="" width="250" height="250">
 
                     
 

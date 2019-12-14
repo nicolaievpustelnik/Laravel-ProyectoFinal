@@ -11,10 +11,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('js/master.js') }}"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -24,7 +25,7 @@
     <div id="app">
         <nav class="_Ninav-Ju navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('home') }}">
+                <a class="navbar-brand" href="{{ url('register') }}">
                     <img src="{{asset('img/logochico.png')}}" alt="logo" width=180 height=50>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -57,14 +58,15 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" href="{{ route('editarPerf') }}">
+                                        {{ __('Perfil') }}
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
-                                    </a>
-
-                                    <a class="dropdown-item" href="{{ route('editarPerf') }}">
-                                        {{ __('Perfil') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -83,5 +85,10 @@
         </main>
     </div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ asset('js/master.js') }}"></script>
 </body>
 </html>

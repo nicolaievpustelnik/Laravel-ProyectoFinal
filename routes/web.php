@@ -36,7 +36,7 @@ Route::get('/juego', 'JuegoController@juego')->name('juego');
 // // RUTA DE EDITAR PERFIL
 Route::get('/editarPerf', 'JuegoController@editperf')->name('editarPerf');
 // // RUTA DE PREGUNTAS
-Route::get('/juego', 'JuegoController@llamaPregunta')->name('juego');
+Route::get('/json', 'JuegoController@llamaPregunta')->name('json');
 
 
 ////////////////////// ADMINISTRADOR
@@ -45,6 +45,7 @@ Route::get('/preguntas', 'AdminController@show')->name('preguntas');
 Route::get('/preguntas/{id}', 'AdminController@delete')->name('preguntas');
 // RUTA DE AGG ADMIN
 Route::get('/aggAdmin', 'AdminController@aggAdmin')->name('aggAdmin');
+Route::post('/aggAdmin', 'AdminController@addAdminis')->name('aggAdmin');
 // RUTA DE AGG PREGUNTA
 Route::get('/aggPreg', 'AdminController@aggPreg')->name('aggPreg');
 // RUTA DE COMENTARIOS

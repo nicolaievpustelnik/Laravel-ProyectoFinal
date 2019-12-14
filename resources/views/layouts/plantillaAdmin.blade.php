@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/master.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -71,5 +72,9 @@
         </main>
     </div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </body>
 </html>

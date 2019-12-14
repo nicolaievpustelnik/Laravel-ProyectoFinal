@@ -22,6 +22,8 @@
     <!-- OTROS -->
     <script src="https://kit.fontawesome.com/eccefc8370.js"></script>
     <script src="menu/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play|Staatliches&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,8 +34,8 @@
     <div id="app">
         <nav class="_Ninav-Ju navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('img/logochico.png')}}" alt="logo" width=180 height=50>
+                <a class="navbar-brand" href="{{ url('register') }}">
+                    <img src="{{asset('img/logop2.png')}}" alt="logo" width=180 height=50>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -50,24 +52,24 @@
                         <!-- Authentication Links -->
                         @guest
 
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="{{ route('ranking') }}">{{ __('Ranking') }}</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="{{ route('faq') }}">{{ __('FAQ') }}</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="{{ route('contacto') }}">{{ __('Contacto') }}</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="_Ninav-login" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <li class="nav-item col-6">
+                                <a class="_Ninav-login" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="_Ninav-regis" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="_Ninav-regis" href="{{ route('register') }}">{{ __('Registrar') }}</a>
                                 </li>
                             @endif
                         @else
@@ -128,8 +130,14 @@
     </div>
 
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ asset('js/master.js') }}"></script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
 <div class="container _Nicont-ho">
@@ -7,12 +7,12 @@
   
       <article class="col-lg-7 text-center _Nicuadro-perf-ho">
       <article class="col-lg-6 p-2">
-      <!--falta consicion en la cual si no hay una session muestere foto default-->
-      <!-- <a class="" href=""><img class="_Nifot-perf mt-3" src="" alt="Foto" height="150" width="150" ></a> -->
+      <!-- falta consicion en la cual si no hay una session muestere foto default-->
+      <a class="" href=""><img class="_Nifot-perf mt-3" src="{{Storage::url('avatars/'. Auth::user()->avatar)}}" alt="Foto" height="150" width="150" ></a>
       </article>
 
       <article class="col-lg-6 p-3 _Nitit-bien-ho">
-          <h2><ion-icon class="mr-2" name="thumbs-up"></ion-icon>BIENVENIDO: <strong>{{ Auth::user()->name }}</strong> <ion-icon class="ml-2" name="happy"></ion-icon></h2>
+          <h2 id="home"><ion-icon class="mr-2" name="thumbs-up"></ion-icon>BIENVENIDO: <strong>{{ Auth::user()->name}}</strong> <ion-icon class="ml-2" name="happy"></ion-icon></h2>
       </article>
 
       <article class="_Niart-ho">

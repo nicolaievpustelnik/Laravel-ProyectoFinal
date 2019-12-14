@@ -177,7 +177,7 @@
   }
   ._Nih1edit-perf{
     color: #f7b733;
-    padding-top: 20vh;
+    padding-top: 5vh;
     margin-top: 3%;
     margin-bottom: 3%;
   }
@@ -224,6 +224,9 @@
   
   
   /*////////////////////////////////////////////// CCS DE HOME /////////////////////////////////////*/
+._homeJubg{
+  background-image: url(../img/interr.gif);
+}
   /* HAMBURGUESA PERFIL */
   ._Nihamb-perfHo{
     background-color: #f7b733;
@@ -314,14 +317,13 @@
     background-color: #F0EBF4;
     width: 30%;
     border-radius: 3%;
-    color: #e64398;
     text-decoration: underline #A1C3D1;
   }
   ._NiCua-log{
     background-color:#4abdac;
     border-radius: 4%;
     margin-bottom: 15vh;
-    margin-top: 20vh;
+    margin-top: 2vh;
   }
   ._Nius-cla-lo{
     color: #dfdce3;
@@ -369,6 +371,11 @@
   /*////////////////////////////////////////////// CCS DE JUEGO /////////////////////////////////////*/
   ._NibodySolo-juego{
     background-color: #535353;
+  }
+  ._imgJuGif{
+    margin: auto;
+    display: block;
+    border-radius: 5%;
   }
   /*NAV PARA SALIR A PAG PRINCIPAL*/
   ._Ninav-ju{
@@ -491,7 +498,7 @@
   ._Nibgh1-registrate{
     background-color: #dfdce3;
     border-radius: 4%;
-    margin-top: 20vh;
+    margin-top: 12vh;
   }
   /* TITULO */
   ._Natit-reg{
@@ -665,7 +672,47 @@
     color: #fc4a1a;
     border: #fc4a1a solid 4px;
   }
+
+  /*/////////////////////////////////////////////////CSS DE REGISTER LARAVEL ///////////////////////////////////////*/
+  ._logp2-reg{
+    background-color: #f7b733;
+    width: 15%;
+    border-radius: 50%;
+  }
   
+
+  /*/////////////////////////////////////////////////CSS DE LOGIN LARAVEL ///////////////////////////////////////*/
+._NiCua-log{
+  color: #dfdce3;
+}
+._input-logL{
+  background-color: #f7b733;
+  border: solid 1px black;
+  height: 5vh;
+  border-radius: 10%;
+}
+._BentrarL{
+  background-color: #fc4b1af3;
+  color: black;
+  width: 30%;
+  height: 6vh;
+  border-radius: 10%;
+  border: 1px black solid;
+}
+._containerLogin{
+  background-image: url(../img/bg3.png);
+}
+._logop2{
+  background-color: #f7b733;
+  width: 30%;
+  height: 34vh;
+  border-radius: 50%;
+  margin-top: 10vh;
+  border: 8vh solid #dfdce3;
+  position: relative;
+}
+
+
   
   
   
@@ -674,7 +721,7 @@
   
   /*//////////////////////////////////////////// MIN RESPONSIVE 992 /////////////////////////////////////// */
   @media (min-width: 992px) { 
-  
+
     /*//////////////////////////////////// MIN RESPONSIVE DE CONTACTO (992) /////////////////////////////*/
     /*MAPA*/
     ._Nigoogle-maps{
@@ -728,7 +775,7 @@
     flex: 1;
     text-align: center;
     }
-    /*/////////////////////////////////////////// MIN RESPONSIVE DE JUEGO (992) //////////////////////////////////////////*/
+    /*////////////////////////////////////////// MIN RESPONSIVE DE JUEGO (992) ////////////////////////////////////////*/
     ._NiNavde-salida{
       padding-right: 2vh;
       padding-left: 2vh;
@@ -841,6 +888,11 @@
   }
   /*//////////////////////////////////////////// MAX RESPONSIVE 992 /////////////////////////////////////// */
   @media (max-width: 992px) { 
+    /*//////////////////////////////////// MIN RESPONSIVE DE LOGIN LARAVEL (992) /////////////////////////////*/
+    ._logop2{
+      width: 40%;
+      height: 36vh;
+    }  
     /*/////////////////////////////////////// MAX RESPONSIVE DE REGISTRO (992) ////////////////////////////*/
     ._Nacuadro-info-reg{
       height: 100vh;
@@ -881,4 +933,17 @@
       width: 100%;
       background-color: #f0ebf4;
     }
+    /*//////////////////////////////////// MIN RESPONSIVE DE LOGIN LARAVEL (600) /////////////////////////////*/
+    ._logop2{
+      width: 40%;
+      height: 36vh;
+    }  
+      /*///////////////////////////////////////////// MAX RESPONSIVE 500 //////////////////////////////////////*/
+  @media (max-width: 500px) {
+    /*//////////////////////////////////// MIN RESPONSIVE DE LOGIN LARAVEL (500) /////////////////////////////*/
+    ._logop2{
+      width: 50%;
+      height: 36vh;
+    }  
   }
+}

@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Preguntasrespuesta;
+use Illuminate\Support\Facades\Hash;
 use App\Comentario;
+use App\User;
 
 class AdminController extends Controller
 {
@@ -41,6 +43,19 @@ class AdminController extends Controller
         $comentarios =  Comentario::find($id);
         $comentarios->delete();
         return back()->with('msj',' Se ha eliminado un comentario...!');  
+    }
+    public function addAdminis(Request $request){
+
+        User::create([
+            'name' => request('name'),
+            'email' => request('email'),
+            'password' => Hash::make(request('password')),
+            'rol' => 2,
+        ]);
+
+
+
+        return view('juego/aggAdmin');
     }
     
 }

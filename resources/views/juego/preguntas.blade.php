@@ -18,7 +18,7 @@
 <div>
     <div class="_Nibotpreg">            
         <a href="{{'homeAdmin'}}" class="_NiBsalPreg btn btn-lg active" role="button" aria-pressed="true">Salir</a>
-        <a href="{{'agregarPregunta'}}" class="_NiBeditpreg btn btn-lg active" role="button" aria-pressed="true">Agregar pregunta</a>
+        <a href="{{'aggPreg'}}" class="_NiBeditpreg btn btn-lg active" role="button" aria-pressed="true">Agregar pregunta</a>
     </div>
 </div>
 

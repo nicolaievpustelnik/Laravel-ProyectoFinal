@@ -34,8 +34,8 @@
 
 
     <!--Pregunta-->
-    <section class="_Nicaja-pregunta-principal" id="pregunta">
-        <h2 class="_Nititulo-pregunta"></h2>
+    <section class="_Nicaja-pregunta-principal">
+        <h2 class="_Nititulo-pregunta" id="pregunta"></h2>
     </section>
     
     <!--CAJITA DE RELOJ-->
@@ -50,22 +50,22 @@
 
         <section class="_Nisepara-pregunta">
             
-            <button id="_botonjs1" class="_botonjs _Nirespuesta-par" id="answer1">
-            <p class="_Niletra-pregunta _pr">1.-</p>
+            <button id="1" class="_botonjs _Nirespuesta-par">
+            <p class="_Niletra-pregunta _pr"  id="answer1">1.-</p>
          </button>
-            <button id="_botonjs2" class="_botonjs _Nirespuesta-par" id="answer2">
-                <p class="_Niletra-pregunta _pr">2.-</p>
+            <button id="2" class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta _pr"  id="answer2">2.-</p>
              </button>
 
         </section>
 
         <section class="_Nisepara-pregunta">
 
-            <button id="_botonjs3" class="_botonjs _Nirespuesta-par" id="answer3">
-                <p class="_Niletra-pregunta _pr">3.-</p>
+            <button id="3" class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta _pr" id="answer3">3.-</p>
              </button>
-            <button id="_botonjs4" class="_botonjs _Nirespuesta-par" id="answer4">
-                <p class="_Niletra-pregunta _pr">4.-</p>
+            <button id="4" class="_botonjs _Nirespuesta-par">
+                <p class="_Niletra-pregunta _pr"  id="answer4">4.-</p>
              </button>
         </section>
 

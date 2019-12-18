@@ -17,12 +17,15 @@ class JuegoController extends Controller
 
     public function llamaPregunta(){
         $preguntas = Preguntasrespuesta::all();
-        $array = $preguntas->toJson();
-        // $cuenta = count($preguntas);
-        // $randon = rand(1,$cuenta);
-        // $preguntaImp = Preguntasrespuesta::find($randon);
-        return view('juego/json')->with('array',$array);
-       
+        // $array = $preguntas->toJson();
+        $cuenta = count($preguntas);
+        $randon = rand(1,$cuenta);
+        $preguntaImp = Preguntasrespuesta::find($randon);
+        // return view('juego/json')->with('array',$array);
+       return response()->json([
+           'preguntaImp' => $preguntaImp,
+           'respuestaRandon' => rand(1,4)
+       ]);
     }
     
 }

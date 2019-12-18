@@ -38,6 +38,8 @@ Route::get('/editarPerf', 'JuegoController@editperf')->name('editarPerf');
 // // RUTA DE PREGUNTAS
 Route::get('/json', 'JuegoController@llamaPregunta')->name('json');
 
+// Route::get('/respuesta', 'JuegoController@respuestas')->name('respuesta');
+
 
 ////////////////////// ADMINISTRADOR
 // RUTA DE PREGUNTAS
